@@ -34,6 +34,9 @@ public class PiccodePluginPanel extends JPanel implements PiccodePluginInterface
 	public void init() {
 		instance = new PiccodePluginPanel();
 
+	}
+
+	public void setUpHeader() {
 		headerPanel = new JPanel();
 		headerPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
 		// headerPanel.setLayout(new BoxLayout(headerPanel, BoxLayout.X_AXIS)); // Use BoxLayout for horizontal arrangement
@@ -86,5 +89,15 @@ public class PiccodePluginPanel extends JPanel implements PiccodePluginInterface
 		for (JLabel label: labels) {
 			label.setForeground(PLUGIN_TITLE_FG);
 		}
+	}
+
+	@Override
+	public String getDescription() {
+		return "A Panel to hold the plugin";
+	}
+
+	@Override
+	public String getPluginName() {
+		return "Panel";
 	}
 }

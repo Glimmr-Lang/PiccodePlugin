@@ -11,4 +11,7 @@ public interface PiccodePluginInterface {
 	public PiccodePluginPanel getMainPanel();
 	public void setEditor(Component editor);
 	public void setThemeMode(boolean dark);
+
+	public String getPluginName();
+	public String getDescription();
 }
