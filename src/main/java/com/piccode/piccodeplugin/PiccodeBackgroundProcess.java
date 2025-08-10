@@ -28,4 +28,8 @@ public class PiccodeBackgroundProcess extends JPanel implements PiccodePluginInt
 	public PiccodePluginPanel getMainPanel() {
 		return null;
 	}
+
+	@Override
+	public void setThemeMode(boolean dark) {
+	}
 }

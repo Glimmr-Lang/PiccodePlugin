@@ -29,4 +29,8 @@ public class PiccodePluginPanel extends JPanel implements PiccodePluginInterface
 	public void setEditor(Component editor) {
 		this.editor = editor;
 	}
+
+	@Override
+	public void setThemeMode(boolean dark) {
+	}
 }

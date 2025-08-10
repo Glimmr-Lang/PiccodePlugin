@@ -10,4 +10,5 @@ public interface PiccodePluginInterface {
 	public void init();
 	public PiccodePluginPanel getMainPanel();
 	public void setEditor(Component editor);
+	public void setThemeMode(boolean dark);
 }
