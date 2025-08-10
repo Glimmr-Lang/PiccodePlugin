@@ -38,7 +38,7 @@ public class PiccodePluginPanel extends JPanel implements PiccodePluginInterface
 		headerPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
 		// headerPanel.setLayout(new BoxLayout(headerPanel, BoxLayout.X_AXIS)); // Use BoxLayout for horizontal arrangement
 		headerPanel.setBackground(PLUGIN_TITLE_BG);
-		var cmds = new String[]{};
+		String[] cmds = new String[]{};
 		for (String command : cmds) {
 
 			if (command.equals("_")) {
@@ -51,7 +51,7 @@ public class PiccodePluginPanel extends JPanel implements PiccodePluginInterface
 
 			JLabel commandLabel = new JLabel(command + "  ");
 			labels.add(commandLabel);
-			var fnt = commandLabel.getFont();
+			Font fnt = commandLabel.getFont();
 			fnt = new Font(fnt.getFontName(), fnt.getStyle(), 9);
 			commandLabel.setFont(fnt);
 			commandLabel.setForeground(PLUGIN_TITLE_FG);
@@ -83,7 +83,7 @@ public class PiccodePluginPanel extends JPanel implements PiccodePluginInterface
 		}
 
 		headerPanel.setBackground(PLUGIN_TITLE_BG);
-		for (var label: labels) {
+		for (JLabel label: labels) {
 			label.setForeground(PLUGIN_TITLE_FG);
 		}
 	}
