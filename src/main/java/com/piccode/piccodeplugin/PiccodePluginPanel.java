@@ -85,8 +85,8 @@ public class PiccodePluginPanel extends JPanel implements PiccodePluginInterface
 			PLUGIN_TITLE_BG = Color.WHITE;
 			PLUGIN_TITLE_FG = Color.BLACK;
 		} else {
-			PLUGIN_TITLE_BG = Color.WHITE;
-			PLUGIN_TITLE_FG = Color.BLACK;
+			PLUGIN_TITLE_BG = new Color(0x3c3f41);
+			PLUGIN_TITLE_FG = Color.WHITE;
 		}
 
 		headerPanel.setBackground(PLUGIN_TITLE_BG);
