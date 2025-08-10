@@ -37,6 +37,9 @@ public class PiccodePluginPanel extends JPanel implements PiccodePluginInterface
 	}
 
 	public void setUpHeader() {
+		if (instance == null) {
+			return;
+		}
 		headerPanel = new JPanel();
 		headerPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
 		// headerPanel.setLayout(new BoxLayout(headerPanel, BoxLayout.X_AXIS)); // Use BoxLayout for horizontal arrangement

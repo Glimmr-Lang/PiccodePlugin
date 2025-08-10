@@ -32,4 +32,14 @@ public class PiccodeBackgroundProcess extends JPanel implements PiccodePluginInt
 	@Override
 	public void setThemeMode(boolean dark) {
 	}
+
+	@Override
+	public String getPluginName() {
+		return "BackgroundPlugin";
+	}
+
+	@Override
+	public String getDescription() {
+		return "Background task as a plugin";
+	}
 }
