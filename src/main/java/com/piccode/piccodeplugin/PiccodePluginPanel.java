@@ -44,7 +44,7 @@ public class PiccodePluginPanel extends JPanel implements PiccodePluginInterface
 		headerPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
 		// headerPanel.setLayout(new BoxLayout(headerPanel, BoxLayout.X_AXIS)); // Use BoxLayout for horizontal arrangement
 		headerPanel.setBackground(PLUGIN_TITLE_BG);
-		String[] cmds = new String[]{};
+		String[] cmds = new String[]{getPluginName(), "_", getDescription(), "_", "Plugin"};
 		for (String command : cmds) {
 
 			if (command.equals("_")) {
