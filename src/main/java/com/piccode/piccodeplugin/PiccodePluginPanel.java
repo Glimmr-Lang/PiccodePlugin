@@ -20,7 +20,7 @@ public class PiccodePluginPanel extends JPanel implements PiccodePluginInterface
 	protected PiccodePluginPanel instance;
 	protected Component editor;
 	private final JPanel headerPanel = new JPanel();
-	private final List<JLabel> labels = new ArrayList<>();
+	private final List<JLabel> labels = new ArrayList<JLabel>();
 
 	public static Color PLUGIN_TITLE_BG = Color.WHITE;
 	public static Color PLUGIN_TITLE_FG = Color.BLACK;
