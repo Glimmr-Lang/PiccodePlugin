@@ -19,7 +19,7 @@ public class PiccodePluginPanel extends JPanel implements PiccodePluginInterface
 
 	protected PiccodePluginPanel instance;
 	protected Component editor;
-	private final JPanel headerPanel = new JPanel();
+	private JPanel headerPanel = new JPanel();
 	private final List<JLabel> labels = new ArrayList<JLabel>();
 
 	public static Color PLUGIN_TITLE_BG = Color.WHITE;
@@ -42,6 +42,7 @@ public class PiccodePluginPanel extends JPanel implements PiccodePluginInterface
 		if (instance == null) {
 			return;
 		}
+		headerPanel = new JPanel();
 		headerPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
 		// headerPanel.setLayout(new BoxLayout(headerPanel, BoxLayout.X_AXIS)); // Use BoxLayout for horizontal arrangement
 		headerPanel.setBackground(PLUGIN_TITLE_BG);
@@ -82,11 +83,11 @@ public class PiccodePluginPanel extends JPanel implements PiccodePluginInterface
 	@Override
 	public void setThemeMode(boolean dark) {
 		if (dark) {
-			PLUGIN_TITLE_BG = Color.WHITE;
-			PLUGIN_TITLE_FG = Color.BLACK;
-		} else {
 			PLUGIN_TITLE_BG = new Color(0x3c3f41);
 			PLUGIN_TITLE_FG = Color.WHITE;
+		} else {
+			PLUGIN_TITLE_FG = Color.BLACK;
+			PLUGIN_TITLE_BG = Color.WHITE;
 		}
 
 		headerPanel.setBackground(PLUGIN_TITLE_BG);
