@@ -32,15 +32,33 @@ public class MyPlugin extends PiccodePluginPanel {
 ```java
 
 public class BackgroundTaskPlugin extends PiccodeBackgroundProcess {
-	public BackgroundTaskPlugin() {
-		super();
-	}
+  public BackgroundTaskPlugin() {
+    super();
+  }
 
-	@Override
-	public void init() {
-	  // Plugin Logic
+  @Override
+  public void init() {
+    // Plugin Logic
   }
 }
 
 ```
 
+## Installation 
+
+Add this to your pom.xml under relevant sections
+
+```xml
+<repositories>
+  <repository>
+    <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
+  </repository>
+</repositories>
+
+<dependency>
+  <groupId>com.github.Glimmr-Lang</groupId>
+  <artifactId>PiccodePlugin</artifactId>
+  <version>main-SNAPSHOT</version>
+</dependency>
+```
