@@ -19,8 +19,8 @@ public class PiccodePluginPanel extends JPanel implements PiccodePluginInterface
 
 	protected PiccodePluginPanel instance;
 	protected Component editor;
-	private JPanel headerPanel;
-	private List<JLabel> labels = new ArrayList<JLabel>();
+	private final JPanel headerPanel = new JPanel();
+	private final List<JLabel> labels = new ArrayList<>();
 
 	public static Color PLUGIN_TITLE_BG = Color.WHITE;
 	public static Color PLUGIN_TITLE_FG = Color.BLACK;
@@ -33,14 +33,15 @@ public class PiccodePluginPanel extends JPanel implements PiccodePluginInterface
 	@Override
 	public void init() {
 		instance = new PiccodePluginPanel();
-
+		setUpHeader();
 	}
+
+	
 
 	public void setUpHeader() {
 		if (instance == null) {
 			return;
 		}
-		headerPanel = new JPanel();
 		headerPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
 		// headerPanel.setLayout(new BoxLayout(headerPanel, BoxLayout.X_AXIS)); // Use BoxLayout for horizontal arrangement
 		headerPanel.setBackground(PLUGIN_TITLE_BG);
