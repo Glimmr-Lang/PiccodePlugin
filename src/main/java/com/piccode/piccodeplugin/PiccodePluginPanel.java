@@ -83,6 +83,8 @@ public class PiccodePluginPanel extends JPanel implements PiccodePluginInterface
 		}
 
 		headerPanel.setBackground(PLUGIN_TITLE_BG);
-		labels.forEach(label -> label.setForeground(PLUGIN_TITLE_FG));
+		for (var label: labels) {
+			label.setForeground(PLUGIN_TITLE_FG);
+		}
 	}
 }
